@@ -9,46 +9,65 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<h3>Feedback Form</h3>
-	<form action="welcome.php" method="POST">
-		<table>
-		<tr>
-			<th>Element</th>
-			<th>ID</th>
-			<th>Type</th>
-			<th>Attributes</th>
-			<th>Label Required</th>
-		</tr>
-			<tr>
-				<td>Name</td>
-				<td>name</td>
-				<td>Text</td>
-				<td id="name" name="name" minlength="3" maxlength="50">minlength="3", maxlength="50", required</td>
-				<td>Yes</td>
-			</tr>
-			<tr>
-				<td>Portfolio</td>
-				<td>portfolio</td>
-				<td>URL</td>
-				<td>required</td>
-				<td>Yes</td>
-			</tr>
-			<tr>
-				<td>Favorite Color</td>
-				<td>favColor</td>
-				<td>Text</td>
-				<td>Color</td>
-				<td>Yes</td>
-			</tr>
-			<tr>
-				<td>Likeness</td>
-				<td>likeness</td>
-				<td>Range</td>
-				<td minlength="1" maxlength="100">min="1", max="100"</td>
-				<td>Yes</td>
-			</tr>
-	</table>
-		<input type="submit" id="name">
-	</form>
+	 <form action="welcome.php" method="POST">
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Label Required</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>name</td>
+                <td>Text</td>
+                <td>minlength="3", maxlength="50", required</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Portfolio</td>
+                <td>portfolio</td>
+                <td>URL</td>
+                <td>required</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Favorite Color</td>
+                <td>favColor</td>
+                <td>Color</td>
+                <td>required</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Likeness</td>
+                <td>likeness</td>
+                <td>Range</td>
+                <td>min="1", max="100"</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+
+        <!-- Form Inputs -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+        </div>
+        <div>
+            <label for="portfolio">Portfolio URL:</label>
+            <input type="url" id="portfolio" name="portfolio" required>
+        </div>
+        <div>
+            <label for="favColor">Favorite Color:</label>
+            <input type="color" id="favColor" name="favColor" required>
+        </div>
+        <div>
+            <label for="likeness">Likeness (1-100):</label>
+            <input type="range" id="likeness" name="likeness" min="1" max="100" required>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
