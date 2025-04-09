@@ -1,11 +1,20 @@
 
 /* Your CSS Code here. */
-table, tr, td,th{
+ table,tr,td,th{
 	border:1px solid ;
+	 padding:10px;
 }
 table{
-	width:100%
+	width:100%;
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
 }
 h3{
 	text-align:center;
+}
+tr:nth-child(even){
+	background-color:lightgray;
+}
+#name{
+	margin-top:10px;
 }
